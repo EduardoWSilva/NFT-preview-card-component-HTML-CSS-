@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+
+}
+
+/* root */
+:root {
+    --var--Soft--blue: hsl(215, 51%, 70%);
+    --var--Cyan: hsl(178, 100%, 50%);
+    --var--dark--blue: hsl(217, 54%, 11%);
+    --var--Ver--dark--blue: hsl(216, 50%, 16%);
+    --var--Very--dark--blue: hsl(215, 32%, 27%);
+    --var--White: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--var--dark--blue);
+}
+
+/* container */
+.container {
+    background-color: var(--var--Ver--dark--blue);
+    padding: 26px;
+    width: 26%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+/* banner */
+.banner{
+    background-image: url("../images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.states_hover {
+    width: 100%;
+    height: 303px;
+    border-radius: 8px;
+    transition: all .4s ease-in-out;
+}
+.states_hover:hover {
+    background-color: hsla(178, 100%, 50%, 0.5);
+    cursor: pointer;
+    background-image: url(../images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* box-inf */
+.box-inf h2 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--var--White);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.box-inf h2:hover{
+    color: var(--var--Cyan);
+}
+
+.box-inf p {
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--var--Soft--blue);
+}
+
+/* box-coin */
+.box-coin {
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-coin img {
+    padding-right: 7px;
+}
+
+.item-coin,
+.item-days {
+    display: flex;
+    align-items: center;
+}
+
+.item-coin {
+    color: var(--var--Cyan);
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    padding-left: 1px;
+}
+
+/* item-days */
+.item-days{
+    color: var(--var--Soft--blue);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-right: 2px;
+}
+
+.item-days img {
+    padding-right: 6px;
+}
+
+/* box-autor */
+.box-autor{
+    border-top: 1px solid var(--var--Very--dark--blue);
+    padding: 17px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+.box-autor img{
+    width: 11%;
+    border: 1px solid var(--var--White);
+    border-radius: 20px;
+    margin-right: 16px;
+}
+.box-autor span{
+    color: var(--var--Soft--blue);
+    font-weight: 400;
+    margin-right: 5px;
+    
+}
+.box-autor p{
+    color: var(--var--White);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.box-autor p:hover{
+    color: var(--var--Cyan);
+    
+}
+
+/* Notebook */
+@media(max-width:1100px)
+{
+    body{
+        min-height: 768px;
+    }
+    .container{
+        width: 35%;
+    }
+}
+
+/* tablet */
+@media(max-width:900px) {
+    .container{
+        width: 46%;
+    }
+}
+
+/* mobile */
+@media(max-width:475px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
